@@ -1,0 +1,186 @@
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background for neat and clean look */
+    color: #1c2541; /* Dark text color for readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3a506b; /* Professional dark-blue shade */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+header img{
+width: 200;
+height: 200px;
+border-radius: 200%;
+object-fit: cover;
+border: 2px solid;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #5bc0be; /* Eye-catching highlight color */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 3em 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #3a506b; /* Accent color for headings */
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Downloadable CV button */
+a[download] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5bc0be; /* Highlight color for buttons */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[download]:hover {
+    background-color: #3a506b; /* Darker color on hover */
+}
+
+/* Project Section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 2rem;
+}
+
+ul li a {
+    font-size: 1.3rem;
+    color: #1c2541;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #5bc0be; /* Highlight color for hover */
+}
+
+img {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the image */
+}
+
+/* Contact Section */
+a[href^="mailto"] {
+    color: #5bc0be;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a[href^="mailto"]:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #3a506b;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .section {
+        padding: 2em 5%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+    
+
+/* Styling for the skill buttons */
+
+.skill-btn {
+    background-color: #007bff; /* Button background color */
+    color: lightgreen; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 8px; /* Rounded corners */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.skill-btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+}
